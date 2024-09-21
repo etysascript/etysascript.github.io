@@ -1,11 +1,15 @@
 
 
-data = [`$ etysa startapp
-$
-$
-$
-$
-$`]
+data = [`$ etysa
+Hey its etysa v0.0.1 unstable.
+>  1 + 19
+20
+>  x = 'hello'
+>  y = 'world'
+>
+> f'{x} {y}'
+hello world`
+]
 
 blocks = [
 `abc = 'hello world'

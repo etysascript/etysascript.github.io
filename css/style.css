@@ -83,7 +83,7 @@ nav .nav-title *{
 }
 
 .btn-2{
-  background-color: #007acc;
+  background-color: #ff6339;
   color: white;
 }
 
@@ -111,8 +111,9 @@ nav .nav-title *{
 }
 
 .term-body{
-  line-height: 32px !important;
+  line-height: 22px !important;
   font-family: monospace;
+  font-size: 15px;
 }
 
 .table{
@@ -176,4 +177,24 @@ nav .nav-title *{
   overflow: auto;
   font-family: monospace !important;
   font-weight: bold;
+}
+
+.logo{
+  height: 320px;
+}
+
+
+.logos{
+  height: 60px;
+  margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+  .logo{
+    height: 100px;
+  }
+
+  .logos{
+    height: 50px;
+  }
 }

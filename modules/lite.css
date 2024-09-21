@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+
+
+.coder *, .coder{
+	font-size: 15px;
+	color: #4b4b4b;
+	font-family: 'Fira Mono', monospace !important;
+}
+
+.flare-keywords{
+	color: #008750 !important;
+}
+
+.flare-call{
+	color: #0050ae !important;
+}
+
+.flare-attributes{
+	color: #4b4b4b !important;
+}
+
+.flare-numbers{
+	color: #ae1000 !important;
+}
+
+.flare-operators{
+	color: #be50ff !important;
+}
+
+
+.flare-strings, span2, .flare-strings *, .c-string{
+	color: #ae5000 !important;
+}
+
+.flare-comments, .flare-comments *{
+	color: #5b5b5b90 !important;
+	font-style: italic;
+}
+
+.c-green{
+	color: #ae5000 !important;
+}

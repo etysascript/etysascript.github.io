@@ -7,20 +7,22 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+
     <link rel="stylesheet" type="text/css" href="css/fancy.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="modules/lite.css">
   </head>
   <body>
     <nav class="flex justify-center shadow-md sticky-top overflow-x-scroll-md">
-      <div class="col-8 col-9-sm pt-2 pb-1 flex justify-between">
+      <div class="col-8 col-9-sm pt-1  flex justify-between">
         <div class="flex justify-start align-items-center">
-          <p class="nav-link py-2 nav-title b3"><a href="index.html">ETYSA</a></p>
+          <p class="nav-link py-1 nav-title b3 mr-3-sm"><a href="index.html">ETYSA</a></p>
         </div>
         <div class="flex justify-end align-items-center">
           <p class="py-2 nav-link"><a href="docs.html" class="px-3 py-2">Docs</a></p>
           <p class="py-2 nav-link"><a href="docs.html" class="px-3 py-2">Modules</a></p>
           <p class="py-2 nav-link"><a href="docs.html" class="px-3 py-2">Examples</a></p>
-          <p class="py-2 nav-link"><a href="https://github.com/etysascript/etysa" class="px-3 btn-sm"><i class="fab fa-github mr-2"></i> Download</a></p>
+          <p class="py-2 nav-link flex flex-nowrap"><a href="https://github.com/etysascript/etysa" class="px-3 btn-sm flex flex-nowrap"><i class="fab fa-github mr-2"></i>&nbsp;Download</a></p>
           <p class="py-2 nav-link"><span href="download.html" class="px-3 btn-sm"><i class="fas fa-moon"></i></span></p>
         </div>
       </div>
@@ -80,7 +82,7 @@
       </div>
       
       <div class="py-20 py-10-md py-7-sm flex justify-center">
-        <div class="col-9 col-10-sm px-3-md">
+        <div class="col-8 col-9-md col-10-sm px-3-md">
           <p class="text-xl-7 b3">Quick examples</p>
           <div class="mt-10 mt-5-sm table shadow-lg overflow-x-scroll-sm w-100">
             <div class="overflow-x-auto-sm">
@@ -95,7 +97,7 @@
               <p class="files-btn">app.ets</p>
             </div>
             <div class="editor vh-50 overflow-y-scroll-sm flex flex-wrap-sm">
-              <div class="col-5 col-10-sm h-100 vh-50-sm b-none-sm write" id="writer"></div>
+              <div class="col-5 col-10-sm h-100 vh-50-sm b-none-sm write coder" id="writer"></div>
               <div class="col-5 col-10-sm h-100 h-max-content-sm b-none-sm output" id="output"></div>
             </div>
           </div>
@@ -131,5 +133,6 @@
 
   </body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/svg-with-js.min.css"></script>
+  <script type="text/javascript" src="modules/lite.js"></script/>
   <script type="text/javascript" src="css/main.js"></script/>
 </html>

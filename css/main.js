@@ -82,6 +82,9 @@ menu = document.getElementsByClassName('menu-btn');
 writer = document.getElementById('writer');
 outputer = document.getElementById('output');
 
+let lite = new Lite();
+
+
 for(i=0; i < codes.length; i++){
 	codes[0].innerHTML = data[i];
 }
@@ -89,15 +92,21 @@ for(i=0; i < codes.length; i++){
 writer.innerHTML = blocks[0];
 outputer.innerHTML = outputs[0];
 
+lite.light(writer);
+
+
 function off(){
 	for (let i = 0; i< menu.length; i++) {
 		menu[i].classList.remove('active');
 	}
 }
 
+
 function updater(x){
 	writer.innerHTML = blocks[x];
 	outputer.innerHTML = outputs[x];
+
+	lite.light(writer);
 }
 
 for (let i = 0; i< menu.length; i++) {

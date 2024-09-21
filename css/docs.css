@@ -1,0 +1,49 @@
+
+*{
+	    box-sizing: inherit;
+    scrollbar-width: thin;
+    scrollbar-color: #0000004d transparent;
+    -webkit-tap-highlight-color: #d430081a;
+    transition: .5s background-color linear;
+    margin: 0;
+    padding: 0;
+    transition-property: background, background-color, background-image, border;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.sidebar{
+	background-color: #f7fafd;
+	overflow-y: scroll;
+	width: 23%;
+	border-right: 1px solid #c2cdd6;
+}
+
+.sidebar a{
+	font-size: 16px;
+	color: #676779;
+	font-weight: 300;
+}
+
+.sidebar p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.docs{
+	width: 70%;
+}
+
+.docs *{
+	font-weight: 300;
+	line-height: 1.7rem;
+}
+
+.t1{
+	font-size: 50px;
+}

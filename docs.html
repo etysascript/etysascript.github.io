@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-svg" href="images/brain.svg">
+
     <title>Etysa- programming language downloads</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -27,13 +30,19 @@
         </div>
       </div>
     </nav>
+
+    <p class="menu-toggler d-none d-block-md" id="tog">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </p>
       
     <section>
       <div class="flex vh-100">
       
-        <div class="flex justify-end sidebar vh-100">
-          <div class="col-8">
-            <p class="pt-20 mt-20"></p>
+        <div class="flex justify-end sidebar vh-100 d-none-md" id="sidemenu">
+          <div class="col-8 col-7-sm sider pl-4-sm vh-100-sm overflow-y-auto">
+            <p class="pt-20 mt-20 mt-4-md"></p>
             <p class="">GETTING STARTED</p>
             <p class="py-2"><a href="">Introduction</a></p>
             <p class="py-2"><a href="">Installation and building</a></p>
@@ -75,18 +84,19 @@
             </div>
             <p class="pb-10 mt-10"></p>
           </div>
+          <div class="col-3-sm vh-100 d-none d-block-md" id="back"></div>
         </div>
 
-        <div class="vh-100 justify-start px-10 flex docs">
-          <div class="py-20 col-7">
+        <div class="vh-100 justify-start px-10 px-2-md flex docs">
+          <div class="py-20 py-10-md col-7-xxl col-9-md col-10-sm px-4-sm">
 
             <div>
-              <p class="pt-5 mb-3">GETTING STARTED</p>
+              <p class="pt-5 mt-3-sm mb-3">GETTING STARTED</p>
               <p class="t1 pt-1 mt-1 mb-5">Introduction</p>
 
-              <p>Welcome to the Svelte reference documentation! This is intended as a resource for people who already have some familiarity with Svelte and want to learn more about using it.</p>
+              <p>Welcome to the Etysa reference documentation! This is intended as a resource for people who already have some familiarity with Etysa and want to learn more about using it.</p>
 
-              <p>If that's not you (yet), you may prefer to visit the interactive tutorial or the examples before consulting this reference. You can try Svelte online using the REPL. Alternatively, if you'd like a more fully-featured environment, you can try Svelte on StackBlitz.</p>
+              <p>If that's not you (yet), you may prefer to visit the interactive tutorial or the examples before consulting this reference. You can try Etysa online using the REPL. Alternatively, if you'd like a more fully-featured environment, you can try Etysa on StackBlitz.</p>
             </div>
 
 
@@ -111,5 +121,6 @@
 
   </body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/svg-with-js.min.css"></script>
-  <script type="text/javascript" src="css/main.js"></script/>
+  <!-- <script type="text/javascript" src="css/main.js"></script/> -->
+  <script type="text/javascript" src="css/docs.js"></script/>
 </html>

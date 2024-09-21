@@ -23,7 +23,7 @@ class Lite {
 		this.double = /'(.*?)'/g;
 
 		this.consts = /\b([A-Z]+[a-z0-9A-Z_]+)\b/g;
-		this.keywords = /\b(import|fn|enum|function|from|as|class|in|return|let|try|if|for|while|elif|else|case|switch|default|catch|def|break|while|switch|del|for|continue|break)\b/g;
+		this.keywords = /\b(import|fn|do|enum|function|from|as|class|in|return|let|try|if|for|while|elif|else|case|switch|default|catch|def|break|while|switch|del|for|continue|break)\b/g;
 
 		this.operators = /\b(as|in|or|null|true|false)\b/g;
 		this.numbers = /\b([0-9_]+)/g;

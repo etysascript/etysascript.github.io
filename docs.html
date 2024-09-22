@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/fancy.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/docs.css">
+    <link rel="stylesheet" type="text/css" href="modules/lite.css">
   </head>
   <body>
     
@@ -44,18 +45,18 @@
           <div class="col-8 col-7-sm sider pl-4-sm vh-100-sm overflow-y-auto">
             <p class="pt-20 mt-20 mt-4-md"></p>
             <p class="">GETTING STARTED</p>
-            <p class="py-2"><a href="">Introduction</a></p>
-            <p class="py-2"><a href="">Installation and building</a></p>
+            <p class="py-2"><a href="#Introduction">Introduction</a></p>
+            <p class="py-2"><a href="#Installation">Installation and building</a></p>
 
             <div class="mt-5">
               <p class="pb-1">ETYSA SYNTAX</p>
-              <p class=""><a href="">Store/Variables</a></p>
-              <p class=""><a href="">Store/Datatypes</a></p>
-              <p class=""><a href="">Store/Functions</a></p>
-              <p class=""><a href="">States/If</a></p>
-              <p class=""><a href="">States/Try-except</a></p>
-              <p class=""><a href="">Loops/While</a></p>
-              <p class=""><a href="">Loops/For</a></p>
+              <p class=""><a href="#Variables">Store/Variables</a></p>
+              <p class=""><a href="#Datatypes">Store/Datatypes</a></p>
+              <p class=""><a href="#Functions">Store/Functions</a></p>
+              <p class=""><a href="#If">States/If</a></p>
+              <p class=""><a href="#Try-except">States/Try-except</a></p>
+              <p class=""><a href="#While">Loops/While</a></p>
+              <p class=""><a href="#For">Loops/For</a></p>
             </div>
 
             <div class="mt-5">
@@ -87,17 +88,102 @@
           <div class="col-3-sm vh-100 d-none d-block-md" id="back"></div>
         </div>
 
-        <div class="vh-100 justify-start px-10 px-2-md flex docs">
-          <div class="py-20 py-10-md col-7-xxl col-9-md col-10-sm px-4-sm">
+        <div class="vh-100 justify-start px-10 px-2-md flex docs overflow-y-scroll">
+          <div class="py-20 py-10-md col-7-xxl col-9-md col-10-sm px-4-sm ">
 
             <div>
               <p class="pt-5 mt-3-sm mb-3">GETTING STARTED</p>
-              <p class="t1 pt-1 mt-1 mb-5">Introduction</p>
+              <p id="Introduction" class="t1 pt-1 mt-1 mb-5"><img src="https://www.svgrepo.com/show/286698/hash.svg" class="img logos"> Introduction</p>
 
-              <p>Welcome to the Etysa reference documentation! This is intended as a resource for people who already have some familiarity with Etysa and want to learn more about using it.</p>
+              <p class="mb-4">Welcome to the Etysa reference documentation! This is better for people who already have some coding knowledge with any programming language as learning won't taken at all a while.</p>
 
-              <p>If that's not you (yet), you may prefer to visit the interactive tutorial or the examples before consulting this reference. You can try Etysa online using the REPL. Alternatively, if you'd like a more fully-featured environment, you can try Etysa on StackBlitz.</p>
+              <p class="mb-4">If you know non, a friend good at programming can assist but a book will be released that will catalyse everything. Plus tutorials too. An interactive console will soon come where you can learn as you test your coding live on your browser.</p>
+
+              <p class="mb-4">Just some sad news is that etysa is very buggy beyond beta version. So expect error but they will be sorted.</p>
             </div>
+
+            <div>
+              <p id="Installation" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> Installation and Builds</p>
+
+              <p class="mb-4">Distibution is not direct for as you may have to compile the source code for your system. Good etysa is written in <a href="https://dlang.org/download.html">Dlang</a>, a language capable of setting on any system so just download and using following commands.</p>
+
+              <p class="mb-3">Source is at <a href="https://github.com/etysascript/etysa">github assets</a>, Make sure a Dlang compiler is installed on your pc, <a href="https://dlang.org/download.html">DMD</a> is recommended.</p>
+
+              <div class="codic mb-4">$ git clone https://github.com/etysascript/etysa.git<br>$ cd etysa<br>$ make build <br>$ ./etysa -v</div>
+
+              <p class="mb-4">Just some sad news is that etysa is very buggy beyond beta version. So expect errors but they will be sorted, but at this moment you have the executable ready to run.</p>
+            </div>
+
+            <div>
+              <p class="pt-5 mt-3-sm mb-3">ETYSA SYNTAX</p>
+              <p class="t1 pt-1 mt-1 mb-5"><img src="https://www.svgrepo.com/show/286698/hash.svg" class="img logos"> Syntax</p>
+
+
+              <p id="Variables" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> Variables</p>
+
+              <p class="mb-4">Variables should have a name without spaces and data they hold. There is no need for decorators, and they hold any type of data that changes during runtime.</p>
+
+              <div class="codec mb-4"></div>
+
+              <p class="mb-4"><span class="key">let</span> and <span class="key">var</span> keywords are just mathematic expressions to detail the variable.</p>
+            </div>
+
+            <div>
+              <p id="Datatypes" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> Datatypes</p>
+
+              <p class="mb-4">Etysa has few datatypes but you may create custom ones using classes.</p>
+
+              <div class="codec mb-4"></div>
+
+              <p class="mb-4">Quick custom data using enums.</p>
+            
+              <div class="codec mb-4"></div>
+            </div>
+
+            <div>
+              <p id="Functions" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> Functions</p>
+
+              <p class="mb-4">Functions create reuseable code blocks, they can be given parameters that require arguments during function calling. They have there own scope as variables created in theme won't reflect outside.</p>
+
+              <div class="codec mb-4"></div>
+
+              <p class="mb-4">Functions can nest other blocks including functions too, using the same function name overwrites the current one in the scope.</p>
+            
+            </div>
+
+            <div>
+              <p id="If" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> if elif else statement</p>
+
+              <p class="mb-4">Conditional execution is achieved by these blocks, <span class="key">elif</span>s can be any number as long as between <span class="key">if</span> plus <span class="key">else</span> statements.</p>
+
+              <div class="codec mb-4"></div>
+            </div>
+
+            <div>
+              <p id="Try-except" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> try except statement</p>
+
+              <p class="mb-4">Escapes errors in a program, returns the error messages and the program continues.</p>
+
+              <div class="codec mb-4"></div>
+            </div>
+
+            <div>
+              <p id="While" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> While loop</p>
+
+              <p class="mb-4">Loop conditional must be fulfilled to continue execution or stops but can be broken out if target reached.</p>
+
+              <div class="codec mb-4"></div>
+            </div>
+
+            <div>
+              <p id="For" class="t2 pt-1 mt-1 mb-5 pt-6 pt-4-sm"><img class="branch img logos"> For loop</p>
+
+              <p class="mb-4">Two for loops exists, one iters the given iterable data and the other depends on a conditions.</p>
+
+              <div class="codec mb-4"></div>
+            </div>
+
+            <div class="py-10 py-5-sm"></div>
 
 
 
@@ -121,6 +207,6 @@
 
   </body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/svg-with-js.min.css"></script>
-  <!-- <script type="text/javascript" src="css/main.js"></script/> -->
+  <script type="text/javascript" src="modules/lite.js"></script/>
   <script type="text/javascript" src="css/docs.js"></script/>
 </html>

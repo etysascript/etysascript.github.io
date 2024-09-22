@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 
 
-.coder *, .coder{
-	font-size: 15px;
+.coder *, .coder, .codic, .codic *, .codec, .codec *{
+	font-size: 14px !important;
 	color: #4b4b4b;
 	font-family: 'Fira Mono', monospace !important;
 }

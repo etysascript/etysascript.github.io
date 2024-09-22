@@ -18,15 +18,14 @@ nav{
 }
 
 .sidebar{
-	background-color: #f7fafd;
-	overflow-y: scroll;
+	background-color: #dce5f4;
 	width: 23%;
 	border-right: 1px solid #c2cdd6;
 }
 
 .sidebar a{
-	font-size: 16px;
-	color: #676779;
+	font-size: 15px;
+	color: #101010;
 	font-weight: 300;
 }
 
@@ -47,6 +46,11 @@ nav{
 .docs a{
 	color: #1c71da;
 	text-decoration: underline;
+}
+
+.cat{
+	font-weight: 500;
+	color: #101010 !important;
 }
 
 .codic, .codec{
@@ -124,4 +128,14 @@ nav{
   .t2{ font-size: 23px; }
   
   .sidebar a{ font-size: 15px; }
+}
+
+.logos{
+  height: 50px;
+}
+
+@media (max-width: 760px) {
+  .logos{
+    height: 40px;
+  }
 }

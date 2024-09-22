@@ -14,7 +14,7 @@ tog.onclick = () => {
 }
 
 for (let i = 0; i < branch.length; i++) {
-	branch[i].src = 'https://www.svgrepo.com/show/503788/branch.svg'
+	branch[i].src = 'https://www.svgrepo.com/show/247502/box-package.svg'
 }
 
 

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Etysa programming language</title>
@@ -11,12 +9,18 @@
     <link rel="stylesheet" type="text/css" href="css/fancy.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="modules/lite.css">
+
+    <style type="text/css">
+      nav *{
+        color: white !important;
+      }
+    </style>
   </head>
-  <body>
-    <nav class="flex justify-center sticky-top overflow-x-scroll-md">
+  <body class="bd">
+    <nav class="flex justify-center overflow-x-scroll-md">
       <div class="col-8 col-9-sm pt-1  flex justify-between">
         <div class="flex justify-start align-items-center">
-          <p class="nav-link py-1 nav-title b3 mr-3-sm"><a href="index.html">Etysa</a></p>
+          <p class="nav-link py-1 nav-title b3 mr-3-sm"><a href="index.html" class="b5">Etysa</a></p>
         </div>
         <div class="flex justify-end align-items-center">
           <p class="py-2 nav-link"><a href="docs.html" class="px-2 py-2">Docs</a></p>
@@ -30,14 +34,14 @@
     <div class="land flex flex-wrap justify-center">
       <div class="col-8 col-10-sm col-9-md px-4-sm flex flex-Rwrap-sm justify-center py-10 py-5-sm">
         <div class="col-4 col-9-sm">
-          <p class="big-3 text-xl-10-sm b5 text-black bl pt-4 text-center-sm">Etysa Script...</p>
-          <p class="text-xl-7 text-xl-3-sm text-center-sm mt-3 b3">Implement new softwares the <br class="d-none-sm">best way.</p>
+          <p class="big-3 text-xl-10-sm text-black bl pt-4 text-center-sm">Etysa Script</p>
+          <p class="text-xl-7 text-xl-3-sm text-center-sm mt-3 b3">Coding in alot of ways</p>
           <div class="mt-3 flex justify-center-sm">
-            <a href="https://github.com/etysascript/etysa"><p class="btn btn-2 align-items-center mt-2 flex align-items-center"><i class="fab mr-2 text-white fa-github"></i> Download source</p></a>
+            <a href="https://github.com/etysascript/etysa"><p style="color: #1651aa;" class="btn btn-2 align-items-center mt-2 flex align-items-center"><i class="fab mr-2 text-white fa-github"></i> Download source</p></a>
           </div>
         </div>
         <div class="col-4 mt-4-sm col-9-sm flex align-items-center justify-center justify-center-sm">
-          <img src="images/brain.svg" class="img logo" >
+          <img src="images/brain.svg" class="img logo">
         </div>
       </div>
     </div>
@@ -46,76 +50,21 @@
       <div class="flex py-20 py-7-sm justify-center">
         <div class="col-8 col-10-md px-5-md flex flex-wrap-md justify-around">
           <div class="col-3 col-10-sm col-5-md mb-2-md py-3">
-            <p class="text-xl-5 text-xl-2-sm segoe b5 flex align-items-center"><img src="https://www.svgrepo.com/show/259511/browser-binary-code.svg" class="img logos"> Interpreted</p>
-            <p class="text-xl text-lg-sm mt-5 mt-2-sm ln b3">Etysa just makes interpretation real, and hence system compatibility becomes a must, code running anywhere. All interpreter benefits are super piled in this thing.</p>
+            <p class="text-xl-2 flex align-items-center"><img src="https://www.svgrepo.com/show/259511/browser-binary-code.svg" class="img logos"> Interpreted</p>
+            <p class=" ln">Etysa just makes interpretation real, and hence system compatibility becomes a must, code running anywhere. All interpreter benefits are super piled in this thing.</p>
           </div>
           <div class="col-3 col-10-sm col-5-md mb-2-md py-3">
-            <p class="text-xl-5 text-xl-2-sm segoe b5 flex align-items-center"><img src="https://www.svgrepo.com/show/284525/aeroplane-plane.svg" class="img logos"> Limitless</p>
-            <p class="text-xl text-lg-sm mt-5 mt-2-sm ln b3">No limitations to your coding will, code can be written in any way to do the same thing but in other implementations, just for performance and improve versatility.</p>
+            <p class="text-xl-2 flex align-items-center"><img src="https://www.svgrepo.com/show/284525/aeroplane-plane.svg" class="img logos"> Limitless</p>
+            <p class=" ln">No limitations to your coding will, code can be written in any way to do the same thing but in other implementations, just for performance and improve versatility.</p>
           </div>
           <div class="col-3 col-10-sm col-5-md py-3">
-            <p class="text-xl-5 text-xl-2-sm segoe b5 flex align-items-center"><img src="https://www.svgrepo.com/show/259432/bus.svg" class="img logos"> Community care</p>
-            <p class="text-xl text-lg-sm mt-5 mt-2-sm ln b3">Etysa is a growing project, this comes to notice that anyone wishing any additional power can require it to be added and it will in no time, so we grow with the language.</p>
+            <p class="text-xl-2 flex align-items-center"><img src="https://www.svgrepo.com/show/259432/bus.svg" class="img logos"> Community care</p>
+            <p class=" ln">Etysa is a growing project, this comes to notice that anyone wishing any additional power can require it to be added and it will in no time, so we grow with the language.</p>
           </div>
         </div>
       </div>
       
-      <div class=" flex py-20 py-7-sm py-10-md cyan justify-center">
-        <div class="col-8 col-9-md col-10-sm px-5-md flex-Rwrap-md flex justify-between">
-          <div class="col-5 col-10-sm">
-            
-            <div class="terminal">
-              <div class="term-title justify-between flex">
-                <p></p>
-                <p class="py-1 text-xl-3 text-md-sm text-lg-md">terminal</p>
-                <p></p>
-              </div>
-              <div class="term-body code"></div>
-            </div>
-          </div>
-          <div class="col-4 col-10-sm mb-4-sm">
-            <p class="text-xl-7">Quick start</p>
-            <p class="mt-3 text-xl text-lg-md b3 ln">To come with software is a package manager but soon. For now compile or download binaries and get started. <br>Enjoy the commandline.</p>
-            <img src="https://www.svgrepo.com/show/441542/terminal.svg" class="img logos mt-3">
-          </div>
-        </div>
-      </div>
       
-      <div class="py-20 py-10-md py-7-sm flex justify-center">
-        <div class="col-8 col-9-md col-10-sm px-3-md">
-          <p class="text-xl-7 b3">Quick examples</p>
-          <div class="mt-10 mt-5-sm table shadow-lg overflow-x-scroll-sm w-100">
-            <div class="overflow-x-auto-sm">
-              <div class="menu flex justify-start align-items-bottom">
-                <p class="menu-btn  active">Hello world</p>
-                <p class="menu-btn "><span class="d-block-sm d-none">Syntax</span><span class="d-none-sm">Basic Syntax</span></p>
-                <p class="menu-btn "><span class="d-block-sm d-none">3</span><span class="d-none-sm">Guess game</span></p>
-                <p class="menu-btn "><span class="d-block-sm d-none">4</span><span class="d-none-sm">File Reading</span></p>
-              </div>
-            </div>
-            <div class="py-1 files flex">
-              <p class="files-btn">app.ets</p>
-            </div>
-            <div class="editor vh-50 overflow-y-scroll-sm flex flex-wrap-sm">
-              <div class="col-5 col-10-sm h-100 vh-50-sm b-none-sm write coder" id="writer"></div>
-              <div class="col-5 col-10-sm h-100 h-max-content-sm b-none-sm output" id="output"></div>
-            </div>
-          </div>
-          <p class="mt-10 b3">Etysa syntax is the easiest to learn so we keep the battle for thinking.</p>
-        </div>
-      </div>
-      
-      <div class="flex py-20 py-10-md py-7-sm cyan justify-center">
-        <div class="col-8 col-9-md col-10-sm px-2">
-          <p class="text-xl-7 flex align-items-center b5 px-4-sm"><img src="https://www.svgrepo.com/show/296105/happy.svg" class="img logos"> Special love to you all</p>
-          <div class="flex flex-wrap-sm px-5-sm">
-            <p class="mt-5 ln col-5 col-9-sm">Etysa is built by no team for now, its a simple project for a developer in his free time. Well its built with a target so it must help God willing. I thank anyone whose willing to contribute code, ideas, documentation, funding and any other help, its warmly welcome. <a href="">Contact me</a></p>
-            <div class="col-5 col-9-sm flex justify-center">
-              <img src="images/gift.svg" style="height: 200px;" class="img rotate-350">
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer class="flex justify-center">
@@ -131,8 +80,8 @@
       </div>
     </footer>
 
-  </body>
+  
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/svg-with-js.min.css"></script>
-  <script type="text/javascript" src="modules/lite.js"></script/>
-  <script type="text/javascript" src="css/main.js"></script/>
-</html>
+  <script type="text/javascript" src="modules/lite.js"></script>
+  <script type="text/javascript" src="css/main.js"></script>
+</body></html>

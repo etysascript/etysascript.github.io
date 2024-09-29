@@ -18,7 +18,7 @@ nav{
 }
 
 .sidebar{
-	background-color: #dce5f4;
+	background-color: #f2f2f2;
 	width: 23%;
 	border-right: 1px solid #c2cdd6;
 }
@@ -56,7 +56,7 @@ nav{
 .codic, .codec{
 	white-space: pre-wrap;
 	word-break: break-all;
-	background-color: #f7fafd;
+	background-color: #f2f2f2;
 	padding: 6px 10px;
 	border-radius: 4px;
 	font-size: 14px !important;
